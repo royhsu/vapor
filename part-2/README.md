@@ -1,6 +1,6 @@
 # New Vapor Project
 
-### Set up a project
+## Set up a project
 
 1. Create a new project
 

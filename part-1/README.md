@@ -1,10 +1,10 @@
 # Set up environment on macOS
 
-### Install Swift
+## Install Swift
 
 1. Install Xcode from the Mac App Store
 
-### Install Vapor
+## Install Vapor
 
 1. Install Vapor
 

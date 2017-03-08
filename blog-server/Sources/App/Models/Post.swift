@@ -3,43 +3,60 @@ import Fluent
 import Foundation
 
 final class Post: Model {
+    
+    struct Schema {
+        
+        static let id = "id"
+
+        static let title = "title"
+        
+        static let content = "content"
+        
+    }
+    
+    // MARK: Property
+    
     var id: Node?
+    
+    var title: String
+    
     var content: String
     
-    init(content: String) {
-        self.id = UUID().uuidString.makeNode()
-        self.content = content
-    }
+    // MARK: Init
 
     init(node: Node, in context: Context) throws {
-        id = try node.extract("id")
-        content = try node.extract("content")
+        
+        self.id = try node.extract(Schema.id)
+        
+        self.title = try node.extract(Schema.title)
+        
+        self.content = try node.extract(Schema.content)
+        
     }
 
     func makeNode(context: Context) throws -> Node {
-        return try Node(node: [
-            "id": id,
-            "content": content
-        ])
+        
+        return try Node(
+            node: [
+                Schema.id: id,
+                Schema.title: title,
+                Schema.content: content
+            ]
+        )
+        
     }
 }
 
-extension Post {
-    /*
-        This will automatically fetch from database, using example here to load
-        automatically for example. Remove on real models.
-    */
-    public convenience init?(from string: String) throws {
-        self.init(content: string)
-    }
-}
+// MARK: - Preparation
 
 extension Post: Preparation {
+    
     static func prepare(_ database: Database) throws {
-        //
+        
     }
 
     static func revert(_ database: Database) throws {
-        //
+        
     }
+    
 }

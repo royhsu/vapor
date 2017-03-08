@@ -23,5 +23,3 @@
 4. Re-create Xcode project
 
 		vapor xcode
-
-	

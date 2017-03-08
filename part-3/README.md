@@ -23,6 +23,6 @@
 Ex: 
 {
 	"title": "Hello World",
-	"content": "This is my first api"
+	"content": "Welcome to my first post"
 }
 ```

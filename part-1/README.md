@@ -13,3 +13,7 @@
 2. Verify the installation
 		
 		vapor --help
+		
+## Reference
+
+* [Vapor](http://vapor.codes)

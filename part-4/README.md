@@ -18,13 +18,13 @@ Building on the Best of Relational with the Innovations of NoSQL
 
 ### Installation
 
-Check updates for Homebrew
+1. Check updates for Homebrew
 
-	brew update
+		brew update
 	
-Install MongoDB via Homebrew
+2. Install MongoDB via Homebrew
 	
-	brew install mongodb --with-openssl
+		brew install mongodb --with-openssl
 
 ### Start the database
 
@@ -58,5 +58,6 @@ Install MongoDB via Homebrew
 	
 ### Reference
 
+* [Install MongoDB Community Edition on OS X](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 * [mongodb Mongod complains that there is no /data/db folder](http://stackoverflow.com/questions/7948789/mongodb-mongod-complains-that-there-is-no-data-db-folder/10097680)
-	
+* [How To Use passwd and adduser to Manage Passwords on a Linux VPS](https://www.digitalocean.com/community/tutorials/how-to-use-passwd-and-adduser-to-manage-passwords-on-a-linux-vps)

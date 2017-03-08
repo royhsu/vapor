@@ -21,3 +21,11 @@
 5. Access the server from Browsers
 
 		http://0.0.0.0:8080
+		
+6. Add [.gitignore](https://www.gitignore.io/api/swift%2Cswiftpm%2Cxcode%2Cvapor%2Cmacos)
+
+	`Swift` `SwiftPM` `Vapor` `Xcode` `macOS `
+
+## Reference
+
+* [gitignore.io](http://www.gitignore.io)

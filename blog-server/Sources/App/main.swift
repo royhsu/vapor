@@ -1,6 +1,9 @@
 import Vapor
+import VaporMongo
 
 let drop = Droplet()
+
+try drop.addProvider(VaporMongo.Provider.self)
 
 let postController = PostController()
 

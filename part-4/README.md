@@ -22,11 +22,11 @@ Check updates for Homebrew
 
 	brew update
 	
-Install MongoDB
+Install MongoDB via Homebrew
 	
 	brew install mongodb --with-openssl
 
-### Run
+### Start the database
 
 1. Create the default data directory for MongoDB
 
@@ -49,6 +49,12 @@ Install MongoDB
 		mongod
 	
 5. Add admin user for Mongo database (Skip)
+
+### Stop the database
+
+1. Quit
+
+	`ctrl` + `c`
 	
 ### Reference
 

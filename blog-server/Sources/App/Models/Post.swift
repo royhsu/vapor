@@ -6,7 +6,7 @@ final class Post: Model {
     
     struct Schema {
         
-        static let id = "id"
+        static let id = "_id"
 
         static let title = "title"
         
@@ -24,6 +24,14 @@ final class Post: Model {
     
     // MARK: Init
 
+    init(title: String, content: String) {
+        
+        self.title = title
+        
+        self.content = content
+        
+    }
+    
     init(node: Node, in context: Context) throws {
         
         self.id = try node.extract(Schema.id)

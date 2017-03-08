@@ -27,7 +27,13 @@ final class PostController {
                 
             }
         
-        return "success"
+        var post = Post(title: title, content: content)
+        
+        try post.save()
+        
+        return try JSON(
+                node: [ "data": post ]
+            )
         
     }
 

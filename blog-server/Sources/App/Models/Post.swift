@@ -25,7 +25,7 @@ final class Post: Model {
 }
 
 extension Post {
-    /**
+    /*
         This will automatically fetch from database, using example here to load
         automatically for example. Remove on real models.
     */

@@ -8,9 +8,11 @@
 		
 2. Select the App target, build, and run
 
-## API endpoint [POST /posts]
+## [POST /posts]
 
-### Reqeust
+Create a Post.
+
+### Reqeust (application/json)
 
 **Body**
 
@@ -26,3 +28,5 @@ Ex:
 	"content": "Welcome to my first post"
 }
 ```
+
+### Response (201)

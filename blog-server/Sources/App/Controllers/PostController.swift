@@ -1,7 +1,13 @@
 import Vapor
 import HTTP
 
-final class PostController {
+final class PostController: ResourceRepresentable {
+    
+    func show(request: Request, post: Post) throws -> ResponseRepresentable {
+        
+        return post
+        
+    }
 
     func create(request: Request) throws -> ResponseRepresentable {
         
@@ -31,10 +37,19 @@ final class PostController {
         
         try post.save()
         
-        return try JSON(
-                node: [ "data": post ]
-            )
+        return Response(status: .created)
         
+    }
+    
+    // MARK: ResourceRepresentable
+    
+    func makeResource() -> Resource<Post> {
+    
+        return Resource(
+            store: create,
+            show: show
+        )
+    
     }
 
 }

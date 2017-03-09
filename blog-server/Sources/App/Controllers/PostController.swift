@@ -5,7 +5,9 @@ final class PostController: ResourceRepresentable {
     
     func show(request: Request, post: Post) throws -> ResponseRepresentable {
         
-        return post
+        return try JSON(
+            node: [ "data": post ]
+        )
         
     }
 
